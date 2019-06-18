@@ -1,0 +1,278 @@
+@import '../../public.scss';
+.nav {
+    background: url('../../../assets/nav/nav.png') center;
+    min-height: 60px;
+    width: 100%;
+    text-align: center;
+    transition: all .2s;
+    position: relative;
+    z-index: 1;
+    // overflow: hidden;
+    &-box {
+        border-bottom: 1px solid rgba(255,255,255,.16);
+        ul {
+            display: inline-block;
+            li {
+                float: left;
+                line-height: 60px;
+                outline: 0;
+                box-sizing: border-box;
+                // transition: all .2s;
+                a {
+                    // -webkit-user-select: none;
+                    color:#f5f5f5;
+                    // display: inline-block;
+                    outline: 0;
+                    padding: 6px 30px;
+                    font-size: 14px;
+                    box-sizing: border-box;
+                    transition: all .2s;
+                    position: relative;
+                    cursor: pointer;
+                }
+                .active {
+                    border: 1px solid #fff;
+                    border-radius: 5px;
+                    
+                }
+                a:hover {
+                    // border: 1px solid #f5f5f5;
+                    // border-radius: 5px;
+                    // margin-left: -2px;
+                    text-shadow: 0 0 20px #fff;
+                    .my-token {
+                        display: block;
+                    }
+                }
+                .my-token {
+                    display: none;
+                    position: absolute;
+                    z-index: 2;
+                    width: 180%;
+                    max-height: 250px;
+                    overflow: auto;
+                    top: 28px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: rgba(255,255,255,.95);
+                    box-shadow: 0 0 4px #999;
+                    &::-webkit-scrollbar {
+                        // display: none;
+                        display: block;
+                        overflow: auto;
+                        position: fixed;
+                        right: 10px;
+                        width: 4px;
+                        height: 16px;
+                        background-color: rgba(0,0,0,0.2);
+                    }
+                    &::-webkit-scrollbar-track{
+                        // -webkit-box-shadow: inset 0 0 6px #0a1055;
+                        border-radius: 10px;
+                        background-color: #999;
+                        display: none;
+                        width: 40px;
+                    }
+                    &::-webkit-scrollbar-thumb{
+                        /*width: 10px;*/
+                        height: 20px;
+                        border-radius: 10px;
+                        // -webkit-box-shadow: inset 0 0 6px #0a1055;
+                        background-color: #1943a6;
+                    }
+                    li {
+                        line-height: 30px;
+                        float: none;
+                        border-bottom: 1px solid #d5d5d5;
+                        .token-name {
+                            color:#333;
+                            display: inline-block;
+                            width: 100%;
+                            height: 100%;
+                            padding: 0;
+                            vertical-align: middle;
+                        }
+                        &:hover {
+                            background-color: rgba($theme-color,.955);
+                            border-bottom: 1px solid rgba($theme-color,.955);
+                            .token-name {
+                                color:#fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .logo {
+            position: absolute;
+            left: 40px;
+            top: 8px;
+        }
+        // .status {
+        //     .tip {
+        //         position: absolute;
+        //         bottom: -20px;
+        //         left: -100%;
+        //         width: 500%;
+        //         background-color: rgba(0,0,0,.2);
+        //         padding: 4px 10px;
+        //     }
+        // }
+        .status-success {
+            cursor: pointer;
+            position: absolute;
+            background-color: green;
+            border-radius: 50%;
+            padding: 2px;
+            color:#fff;
+            right:100px;
+            top: 20px;
+            .tip {
+                position: absolute;
+                bottom: -45px;
+                left: -40px;
+                width: 100px;
+                background-color: rgba(0,0,0,.5);
+                padding: 8px 10px;
+                border-radius: 5px;
+                
+            }
+            .tip::after {
+                content:'';
+                display: block;
+                position: absolute;
+                top: -16px;
+                left: 42px;
+                // width: 0px;
+                // height: 10px;
+                border-top: 8px solid transparent;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                border-bottom: 8px solid rgba(0,0,0,.5);
+            }
+        }
+        .status-erro {
+            cursor: pointer;
+            position: absolute;
+            background-color: #980303;
+            border-radius: 50%;
+            padding: 2px;
+            color:#fff;
+            right:100px;
+            top: 20px;
+            .tip {
+                position: absolute;
+                bottom: -45px;
+                left: -100px;
+                width: 200px;
+                background-color: rgba(0,0,0,.5);
+                padding: 8px 10px;
+                border-radius: 5px;
+                
+            }
+            .tip::after {
+                content:'';
+                display: block;
+                position: absolute;
+                top: -16px;
+                left: 101px;
+                // width: 0px;
+                // height: 10px;
+                border-top: 8px solid transparent;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                border-bottom: 8px solid rgba(0,0,0,.5);
+            }
+        }
+        .status-loading {
+            cursor: pointer;
+            position: absolute;
+            background-color: #ff9800;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            padding: 2px;
+            color:#fff;
+            right:105px;
+            top: 25px;
+            animation: shadowAnimate 1s infinite;
+            .tip {
+                position: absolute;
+                bottom: -45px;
+                left: -46px;
+                width: 90px;
+                background-color: rgba(0,0,0,.5);
+                padding: 8px 10px;
+                border-radius: 5px;
+                
+            }
+            .tip::after {
+                content:'';
+                display: block;
+                position: absolute;
+                top: -16px;
+                left: 42px;
+                // width: 0px;
+                // height: 10px;
+                border-top: 8px solid transparent;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                border-bottom: 8px solid rgba(0,0,0,.5);
+            }
+        }
+        @keyframes shadowAnimate {
+            from {box-shadow: 0 0 0 #fff;}
+            to {box-shadow: 0 0 30px #fff;}
+        }
+
+    }
+}
+
+.drag-status {
+    // cursor: pointer;
+    // position: absolute;
+    // border-radius: 50%;
+    // padding: 2px;
+    // color: #fff;
+    // right: 60px;
+    // top: 26px;
+    // width: 10px;
+    // height: 10px;
+    cursor: pointer;
+    position: absolute;
+    // background-color: green;
+    border-radius: 50%;
+    padding: 2px;
+    color:#fff;
+    right:60px;
+    top: 20px;
+    .tip {
+        position: absolute;
+        bottom: -45px;
+        left: -42px;
+        width: 90px;
+        background-color: rgba(0,0,0,.5);
+        padding: 8px 10px;
+        border-radius: 5px;
+        &:after {
+            content:'';
+            display: block;
+            position: absolute;
+            top: -16px;
+            left: 42px;
+            // width: 0px;
+            // height: 10px;
+            border-top: 8px solid transparent;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid rgba(0,0,0,.5);
+        }
+    }
+}
+.stop {
+    background-color: #980303;
+    
+}
+.draging {
+    background-color: green;
+}

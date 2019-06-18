@@ -1,0 +1,24 @@
+.api {
+    height: 100%;
+    margin-top: -60px;
+    padding-top: 60px;
+    .el-row {
+        height: 100%;
+    }
+    .el-col {
+        height: 100%;
+        overflow-y: auto;
+    }
+    .left {
+        background-color: #1e6bd4;
+        height: 100%;
+        // padding-right: 10px;
+        i {
+            color:#fff;
+        }
+    }
+   
+    .menuitem {
+        background-color: #fff;
+    }
+}

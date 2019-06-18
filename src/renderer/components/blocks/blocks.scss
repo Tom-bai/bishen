@@ -1,0 +1,290 @@
+.blocks {
+    // background-color: #e7f0ff;
+    padding: 50px 40px;
+    // height: 100%;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    .left {
+        &-box {
+            // background-color: #111a77;35b0f2
+            // background:-webkit-gradient(linear, 0 0, 0 bottom, from(#ff0000), to(rgba(0, 0, 255, 0.5)));  
+            background:linear-gradient(-45deg,#35b0f2,#3d82d9);
+            border-radius: 4px 4px 4px 4px;
+            
+        }
+        // .tit {
+        //     height: 60px;
+        //     background:url(../../assets/blocks/01.png) center top;
+        //     background-size: cover;
+        //     border-radius: 4px 4px 0 0;
+        // }
+        .el-row:nth-child(2n+0) {
+            padding-top: 10px;
+        }
+        .content {
+            text-align: center;
+            height: 260px;
+            border-radius: 0 0 4px 4px;
+            
+            h4 {
+                color:#fff;
+                padding-top: 98px;
+                line-height: 50px;
+                font-size: 18px;
+                font-weight: 700;
+            }
+            p {
+                color:#fff;
+                font-size: 14px;
+            }
+        }
+        .box1 {
+            .tit {
+                background:url(../../assets/blocks/01.png) center top;
+            }
+            .content {
+                background:url(../../assets/blocks/blocks1.png) center no-repeat;
+                background-size: 50%;
+                transition: all .2s;
+                &:hover {
+                    background-size: 65%;
+                }
+            }   
+        }
+        .box2 {
+            .tit {
+                background:url(../../assets/blocks/02.png) center top;
+            }
+            .content {
+                background:url(../../assets/blocks/blocks2.png) center no-repeat;
+                background-size: 50%;
+                transition: all .2s;
+                &:hover {
+                    background-size: 65%;
+                }
+            }   
+        }
+        .box3 {
+            .tit {
+                background:url(../../assets/blocks/03.png) center top;
+            }
+            .content {
+                background:url(../../assets/blocks/blocks3.png) center no-repeat;
+                background-size: 50%;
+                transition: all .2s;
+                &:hover {
+                    background-size: 65%;
+                }
+            }   
+        }
+        .box4 {
+            .tit {
+                background:url(../../assets/blocks/04.png) center top;
+            }
+            .content {
+                background:url(../../assets/blocks/blocks4.png) center no-repeat;
+                background-size: 50%;
+                transition: all .2s;
+                &:hover {
+                    background-size: 65%;
+                }
+            }   
+        }
+        
+    }
+    .right {
+        .list1 {
+            height: 260px;
+            background-color: #f2f1f6;
+            border-radius: 4px 4px 4px 4px;
+            // &-tit {
+            //     height: 60px;
+            //     background: url(../../assets/blocks/list1.png) center top no-repeat;
+            //     background-size: cover;
+            //     border-radius: 4px 4px 0 0 ;
+            // }
+            &-content {
+                .tit {
+                    background-color: #1943a6;
+                    text-align: center;
+                    line-height: 40px;
+                    border-bottom: 1px solid #1421a5;
+                    padding-right: 6px;
+                    border-radius: 4px 4px 0px 0px;
+                    span {
+                        color:#fff;
+                        font-size: 14px;
+                    }
+                }
+                .content {
+                    padding-top: 16px;
+                    height: 174px;
+                    overflow-y: auto;
+                    .item {
+                        text-align: center;
+                        line-height: 30px;
+                        
+                        span {
+                            color:#111a77;
+                            font-size: 12px;
+                        }
+                    }
+                    .item:hover {
+                        background-color: rgba(#111a77,.1);
+                    }
+                    
+                }
+                /*定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸*/
+                .content::-webkit-scrollbar{
+                    width: 6px;
+                    height: 16px;
+                    background-color: #1943a6;
+                }
+                /*定义滚动条的轨道，内阴影及圆角*/
+                .content::-webkit-scrollbar-track{
+                    // -webkit-box-shadow: inset 0 0 6px #0a1055;
+                    border-radius: 10px;
+                    background-color: #959ebc;
+                }
+                /*定义滑块，内阴影及圆角*/
+                .content::-webkit-scrollbar-thumb{
+                    /*width: 10px;*/
+                    height: 20px;
+                    border-radius: 10px;
+                    // -webkit-box-shadow: inset 0 0 6px #0a1055;
+                    background-color: #1943a6;
+                }
+                
+            }
+            &-page {
+                text-align: center;
+                padding-top: 8px;
+                .page {
+                    color:#1943a6;
+                    font-size: 14px;
+                    margin-right: 30px;
+                    cursor: pointer;
+                    transition: all .2s;
+                    -webkit-user-select: none;
+                    &:hover {
+                        color:#1943a6;
+                    }
+                }
+                
+            }
+        }
+        .list2 {
+            margin-top: 10px;
+            height: 260px;
+            background-color: #f2f1f6;
+            border-radius: 4px 4px 4px 4px;
+            // &-tit {
+            //     height: 60px;
+            //     background: url(../../assets/blocks/list2.png) center top no-repeat;
+            //     background-size: cover;
+            //     border-radius: 4px 4px 0 0 ;
+            // }
+            &-content {
+                .tit {
+                    background-color: #1943a6;
+                    text-align: center;
+                    line-height: 40px;
+                    border-bottom: 1px solid #1421a5;
+                    padding-right: 6px;
+                    border-radius: 4px 4px 0px 0px;
+                    span {
+                        color:#fff;
+                        font-size: 14px;
+                    }
+                }
+                .content {
+                    padding-top: 16px;
+                    height: 174px;
+                    overflow-y: auto;
+                    
+                    .item {
+                        text-align: center;
+                        line-height: 30px;
+                        
+                        span {
+                            color:#111a77;
+                            font-size: 12px;
+                        }
+                    }
+                    .item:hover {
+                        background-color: rgba(#111a77,.1);
+                    }
+                    
+                }
+                /*定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸*/
+                .content::-webkit-scrollbar{
+                    width: 6px;
+                    height: 16px;
+                    background-color: #1943a6;
+                }
+                /*定义滚动条的轨道，内阴影及圆角*/
+                .content::-webkit-scrollbar-track{
+                    // -webkit-box-shadow: inset 0 0 6px #0a1055;
+                    border-radius: 10px;
+                    background-color: #959ebc;
+                }
+                /*定义滑块，内阴影及圆角*/
+                .content::-webkit-scrollbar-thumb{
+                    /*width: 10px;*/
+                    height: 20px;
+                    border-radius: 10px;
+                    // -webkit-box-shadow: inset 0 0 6px #0a1055;
+                    background-color: #1943a6;
+                }
+                
+            }
+            &-page {
+                text-align: center;
+                padding-top: 8px;
+                .page {
+                    color:#1943a6;
+                    font-size: 14px;
+                    margin-right: 30px;
+                    cursor: pointer;
+                    transition: all .2s;
+                    &:hover {
+                        color:#1943a6;
+                    }
+                }
+            }
+        }
+    }
+}
+.kline {
+    
+    h4 {
+        color:#484E64;
+        font-size: 28px;
+        padding-top: 40px;
+    }
+    i {
+        font-size: 28px;
+        vertical-align: baseline;
+    }
+    span {
+        font-size: 22px;
+        padding-left: 20px;
+    }
+    .echarts {
+        width: 100%;
+        height: 270px;
+        overflow: hidden;
+        span {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 13px;
+        }
+    }
+    .tipHead {
+        display: inline-block;
+        width: 30px;
+        vertical-align: middle;
+        text-align: right;
+        font-size: 13px;
+    }
+}

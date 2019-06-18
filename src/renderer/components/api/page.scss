@@ -1,0 +1,37 @@
+.page {
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    .title {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+    .group {
+        padding-bottom: 20px;
+    }
+    h5 {
+        font-size: 14px;
+        padding: 10px 0;
+        
+    }
+    p {
+        background-color: #f5f5f5;
+        padding: 10px 20px;
+        color:#666;
+        font-size: 14px;
+        line-height: 24px;
+        word-break: break-all;
+        // display: block
+    }
+    .code {
+        background-color: #f5f5f5;
+        padding: 0 20px;
+        color:#666;
+        font-size: 14px;
+        line-height: 24px;
+        word-break: break-all;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+}

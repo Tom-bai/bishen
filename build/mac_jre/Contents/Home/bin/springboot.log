@@ -1,0 +1,498 @@
+2018-09-30 17:04:24.910  INFO 7403 --- [main] c.p.photonchain.InesvchainApplication    : Starting InesvchainApplication v1.0-SNAPSHOT on zxhuan.local with PID 7403 (/Users/zxhuan/Desktop/project/PTN/build/mac_jre/Contents/Home/bin/photon-chain-interfaces-1.0-SNAPSHOT.jar started by zxhuan in /Users/zxhuan/Desktop/project/PTN/build/mac_jre/Contents/Home/bin)
+2018-09-30 17:04:24.922  INFO 7403 --- [main] c.p.photonchain.InesvchainApplication    : The following profiles are active: testnet
+2018-09-30 17:04:25.021  INFO 7403 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63c12fb0: startup date [Sun Sep 30 17:04:25 CST 2018]; root of context hierarchy
+2018-09-30 17:04:28.769  WARN 7403 --- [main] n.sf.ehcache.config.CacheConfiguration   : Cache 'unconfirmedTranCache' is set to eternal but also has TTI/TTL set.  To avoid this warning, clean up the config removing conflicting values of eternal, TTI and TTL. Effective configuration for Cache 'unconfirmedTranCache' will be eternal='true', timeToIdleSeconds='0', timeToLiveSeconds='0'.
+2018-09-30 17:04:29.651  INFO 7403 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 7876 (http)
+2018-09-30 17:04:29.671  INFO 7403 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-30 17:04:29.673  INFO 7403 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-09-30 17:04:29.793  INFO 7403 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-30 17:04:29.794  INFO 7403 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4777 ms
+2018-09-30 17:04:30.112  INFO 7403 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-30 17:04:30.114  INFO 7403 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2018-09-30 17:04:30.120  INFO 7403 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2018-09-30 17:04:30.121  INFO 7403 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-30 17:04:30.121  INFO 7403 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-30 17:04:30.122  INFO 7403 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-30 17:04:30.122  INFO 7403 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-30 17:04:30.122  INFO 7403 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-09-30 17:04:30.122  INFO 7403 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'CORSFilter' to: [/*]
+2018-09-30 17:04:30.123  INFO 7403 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-09-30 17:04:30.468  INFO 7403 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Started.
+2018-09-30 17:04:31.101  INFO 7403 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-09-30 17:04:31.131  INFO 7403 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-09-30 17:04:31.277  INFO 7403 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-09-30 17:04:31.279  INFO 7403 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-09-30 17:04:31.281  INFO 7403 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-09-30 17:04:31.351  INFO 7403 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-09-30 17:04:31.622  INFO 7403 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-09-30 17:04:32.240  INFO 7403 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-09-30 17:04:32.258  INFO 7403 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: address_and_pub_key
+2018-09-30 17:04:32.259  INFO 7403 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: address_and_pub_key
+2018-09-30 17:04:32.266  INFO 7403 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: block
+2018-09-30 17:04:32.267  INFO 7403 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: block
+2018-09-30 17:04:32.269  INFO 7403 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: block_block_transactions
+2018-09-30 17:04:32.270  INFO 7403 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: block_block_transactions
+2018-09-30 17:04:32.272  INFO 7403 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: node_address
+2018-09-30 17:04:32.273  INFO 7403 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: node_address
+2018-09-30 17:04:32.278  INFO 7403 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: token
+2018-09-30 17:04:32.279  INFO 7403 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: token
+2018-09-30 17:04:32.283  INFO 7403 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: transaction
+2018-09-30 17:04:32.284  INFO 7403 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: transaction
+2018-09-30 17:04:32.314  INFO 7403 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: unconfirmed_tran
+2018-09-30 17:04:32.315  INFO 7403 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: unconfirmed_tran
+2018-09-30 17:04:32.476  INFO 7403 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-09-30 17:04:32.860  INFO 7403 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-09-30 17:04:33.406  WARN 7403 --- [main] n.sf.ehcache.config.CacheConfiguration   : Cache 'unconfirmedTranCache' is set to eternal but also has TTI/TTL set.  To avoid this warning, clean up the config removing conflicting values of eternal, TTI and TTL. Effective configuration for Cache 'unconfirmedTranCache' will be eternal='true', timeToIdleSeconds='0', timeToLiveSeconds='0'.
+2018-09-30 17:04:33.582  INFO 7403 --- [main] c.p.p.n.e.SaveAddressAndPubkeyExcutor    : Initializing ExecutorService 
+2018-09-30 17:04:33.592  INFO 7403 --- [main] c.p.p.n.e.SaveAddressAndPubkeyExcutor    : Initializing ExecutorService  'saveAddressAndPubkeyExcutor'
+2018-09-30 17:04:33.684  INFO 7403 --- [main] c.p.p.network.excutor.TotalTranExcutor   : Initializing ExecutorService 
+2018-09-30 17:04:33.690  INFO 7403 --- [main] c.p.p.network.excutor.TotalTranExcutor   : Initializing ExecutorService  'totalTranExcutor'
+2018-09-30 17:04:33.702  INFO 7403 --- [main] c.p.p.network.excutor.PeerClientExcutor  : Initializing ExecutorService 
+2018-09-30 17:04:33.710  INFO 7403 --- [main] c.p.p.network.excutor.PeerClientExcutor  : Initializing ExecutorService  'peerClientExcutor'
+2018-09-30 17:04:33.869  INFO 7403 --- [main] c.p.p.n.excutor.FoundryMachineExcutor    : Initializing ExecutorService 
+2018-09-30 17:04:33.879  INFO 7403 --- [main] c.p.p.n.excutor.FoundryMachineExcutor    : Initializing ExecutorService  'foundryMachineExcutor'
+2018-09-30 17:04:33.944  INFO 7403 --- [main] c.p.p.n.excutor.IterationDataExcutor     : Initializing ExecutorService 
+2018-09-30 17:04:33.952  INFO 7403 --- [main] c.p.p.n.excutor.IterationDataExcutor     : Initializing ExecutorService  'iterationDataExcutor'
+2018-09-30 17:04:33.961  INFO 7403 --- [main] c.p.p.network.excutor.PeerServerExcutor  : Initializing ExecutorService 
+2018-09-30 17:04:33.968  INFO 7403 --- [main] c.p.p.network.excutor.PeerServerExcutor  : Initializing ExecutorService  'peerServerExcutor'
+2018-09-30 17:04:34.589  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63c12fb0: startup date [Sun Sep 30 17:04:25 CST 2018]; root of context hierarchy
+2018-09-30 17:04:34.724  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/contract/invoke],methods=[POST]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.ContractController.invoke(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-09-30 17:04:34.725  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/contract/votesList],methods=[POST]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.ContractController.votesList(com.photon.photonchain.interfaces.utils.PageObject,java.lang.String,java.lang.String)
+2018-09-30 17:04:34.726  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/contract/myContract],methods=[POST]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.ContractController.myContract(com.photon.photonchain.interfaces.utils.PageObject,java.lang.Integer)
+2018-09-30 17:04:34.726  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/contract/transaction],methods=[POST]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.ContractController.transaction(java.lang.String,java.lang.String,java.lang.String)
+2018-09-30 17:04:34.727  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/contract/cancelContract],methods=[POST]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.ContractController.cancelContract(java.lang.String,java.lang.String)
+2018-09-30 17:04:34.728  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/contract/createToken],methods=[POST]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.ContractController.createToken(java.lang.String,java.lang.String)
+2018-09-30 17:04:34.728  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/contract/getOrtherContract],methods=[POST]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.ContractController.getOrtherContractMethodAndField(com.photon.photonchain.interfaces.utils.PageObject)
+2018-09-30 17:04:34.729  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/contract/createContract],methods=[POST]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.ContractController.createContract(java.lang.String,java.lang.Integer)
+2018-09-30 17:04:34.729  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/contract/marketPlace],methods=[POST]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.ContractController.marketPlace(com.photon.photonchain.interfaces.utils.PageObject,int,java.lang.String,java.lang.String,java.lang.Integer)
+2018-09-30 17:04:34.730  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/contract/vote],methods=[POST]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.ContractController.vote(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-09-30 17:04:34.730  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/contract/createData],methods=[POST]}" onto public void com.photon.photonchain.interfaces.controller.ContractController.createData()
+2018-09-30 17:04:34.730  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/contract/getUnconfirmedTran],methods=[GET]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.ContractController.getUnconfirmedTran()
+2018-09-30 17:04:34.731  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/contract/compileContract],methods=[POST]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.ContractController.compileContract(java.lang.String,java.lang.String,java.lang.Integer,java.lang.String)
+2018-09-30 17:04:34.731  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/contract/regexContract],methods=[POST]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.ContractController.regexContract(java.lang.String)
+2018-09-30 17:04:34.732  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/contract/getContractDetails],methods=[GET]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.ContractController.getContractDetails(java.lang.String)
+2018-09-30 17:04:34.734  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/FoundryMachineController/startFoundryMachine],methods=[GET]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.FoundryMachineController.startFoundryMachine(java.lang.String,java.lang.String)
+2018-09-30 17:04:34.735  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/FoundryMachineController/stopNode],methods=[GET]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.FoundryMachineController.stopNode()
+2018-09-30 17:04:34.735  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/FoundryMachineController/stopFoundryMachine],methods=[GET]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.FoundryMachineController.stopFoundryMachine(java.lang.String,java.lang.String)
+2018-09-30 17:04:34.735  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/FoundryMachineController/foundryMachineState],methods=[GET]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.FoundryMachineController.FoundryMachineState(java.lang.String)
+2018-09-30 17:04:34.736  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/FoundryMachineController/noteFoundryMachineState],methods=[GET]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.FoundryMachineController.noteFoundryMachineState()
+2018-09-30 17:04:34.737  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/TokenController/getAddTokenFee],methods=[GET]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.TokenController.getAddTokenFee(java.lang.String,java.lang.String,int)
+2018-09-30 17:04:34.737  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/TokenController/addToken],methods=[POST]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.TokenController.addToken(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-09-30 17:04:34.738  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/TokenController/getAllToken],methods=[GET]}" onto public java.lang.Iterable<com.photon.photonchain.storage.entity.Token> com.photon.photonchain.interfaces.controller.TokenController.getTokenList()
+2018-09-30 17:04:34.752  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/WalletController/getTokenList],methods=[GET]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.WalletController.getTokenList()
+2018-09-30 17:04:34.753  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/WalletController/getTotalBalance],methods=[GET]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.WalletController.getTotalBalance(java.lang.String)
+2018-09-30 17:04:34.753  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/WalletController/getAllAccount],methods=[GET]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.WalletController.getAllAccount(java.lang.String)
+2018-09-30 17:04:34.753  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/WalletController/getAccountBalance],methods=[GET]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.WalletController.getAccountBalance(java.lang.String,java.lang.String)
+2018-09-30 17:04:34.754  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/WalletController/getAccountInfo],methods=[GET]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.WalletController.getAccountInfo(java.lang.String,java.lang.String,com.photon.photonchain.interfaces.utils.PageObject)
+2018-09-30 17:04:34.754  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/WalletController/getBlockInfo],methods=[GET]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.WalletController.getBlockInfo()
+2018-09-30 17:04:34.754  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/WalletController/getBlockListInfo],methods=[GET]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.WalletController.getBlockListInfo(com.photon.photonchain.interfaces.utils.PageObject)
+2018-09-30 17:04:34.755  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/WalletController/createAccount],methods=[POST]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.WalletController.createAccount(java.lang.String) throws java.io.IOException
+2018-09-30 17:04:34.755  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/WalletController/validataAddressIsTrans],methods=[POST]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.WalletController.validataAddressIsTrans(java.lang.String,java.lang.String)
+2018-09-30 17:04:34.755  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/WalletController/transferAccounts],methods=[POST]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.WalletController.transferAccounts(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-09-30 17:04:34.756  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/WalletController/getTransactionList],methods=[GET]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.WalletController.getTransactionList(java.lang.String,java.lang.String,com.photon.photonchain.interfaces.utils.PageObject)
+2018-09-30 17:04:34.756  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/WalletController/getsyncBlockSchedule],methods=[GET]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.WalletController.getsyncBlockSchedule()
+2018-09-30 17:04:34.756  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/WalletController/exportWallet],methods=[POST]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.WalletController.exportWallet(java.lang.String,java.lang.String,java.lang.String)
+2018-09-30 17:04:34.756  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/WalletController/importWallet],methods=[POST]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.WalletController.importWallet(java.lang.String,java.lang.String)
+2018-09-30 17:04:34.757  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/WalletController/getTransactionByHash],methods=[POST]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.WalletController.getTransactionByHash(java.lang.String)
+2018-09-30 17:04:34.757  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/WalletController/getTokenListByAddress],methods=[GET]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.WalletController.getTokenListByAddress(java.lang.String)
+2018-09-30 17:04:34.757  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/WalletController/tokenOpenAndClose],methods=[GET]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.WalletController.tokenOpenAndClose(int,java.lang.String)
+2018-09-30 17:04:34.757  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/WalletController/tokenOpenAndCloseList],methods=[GET]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.WalletController.tokenOpenAndCloseList()
+2018-09-30 17:04:34.758  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/WalletController/tokenOpenAndCloseListFuzzy],methods=[GET]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.WalletController.tokenOpenAndCloseListFuzzy(java.lang.String)
+2018-09-30 17:04:34.758  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/WalletController/getBlockInfoByBlockHeight],methods=[GET]}" onto public com.photon.photonchain.storage.entity.Block com.photon.photonchain.interfaces.controller.WalletController.getBlockInfoByBlockHeight(long)
+2018-09-30 17:04:34.758  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/WalletController/getBlockInfoByBlockHeightDealWithData],methods=[GET]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.WalletController.getBlockInfoByBlockHeightDealWithData(long)
+2018-09-30 17:04:34.759  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/WalletController/getCurNodeBlockHeight],methods=[GET]}" onto public long com.photon.photonchain.interfaces.controller.WalletController.getCurNodeBlockHeight()
+2018-09-30 17:04:34.759  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/WalletController/getTransactionByPubkey],methods=[GET]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.WalletController.getTransactionByPubkey(java.lang.Integer,java.lang.String,java.lang.String,com.photon.photonchain.interfaces.utils.PageObject)
+2018-09-30 17:04:34.759  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/WalletController/getNodeState],methods=[GET]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.WalletController.getNodeState()
+2018-09-30 17:04:34.759  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/WalletController/syncData],methods=[GET]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.WalletController.syncData(java.lang.String,java.lang.String)
+2018-09-30 17:04:34.759  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/WalletController/getTheTrend],methods=[POST]}" onto public com.photon.photonchain.interfaces.utils.Res com.photon.photonchain.interfaces.controller.WalletController.getTheTrend()
+2018-09-30 17:04:34.761  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-30 17:04:34.762  INFO 7403 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-30 17:04:34.825  INFO 7403 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-30 17:04:34.826  INFO 7403 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-30 17:04:34.900  INFO 7403 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-30 17:04:35.477  INFO 7403 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-09-30 17:04:35.478  INFO 7403 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2018-09-30 17:04:35.479  INFO 7403 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-09-30 17:04:35.479  INFO 7403 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-09-30 17:04:35.480  INFO 7403 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-09-30 17:04:35.480  INFO 7403 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-09-30 17:04:35.481  INFO 7403 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-09-30 17:04:35.482  INFO 7403 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-09-30 17:04:35.482  INFO 7403 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-09-30 17:04:35.483  INFO 7403 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-09-30 17:04:35.483  INFO 7403 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-09-30 17:04:35.485  INFO 7403 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-09-30 17:04:35.485  INFO 7403 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-09-30 17:04:35.485  INFO 7403 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-09-30 17:04:35.486  INFO 7403 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-09-30 17:04:35.487  INFO 7403 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-09-30 17:04:35.488  INFO 7403 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-09-30 17:04:35.489  INFO 7403 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-09-30 17:04:35.716  INFO 7403 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-30 17:04:35.718  INFO 7403 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-09-30 17:04:35.728  INFO 7403 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-09-30 17:04:35.737  INFO 7403 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-09-30 17:04:35.826  INFO 7403 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-09-30 17:04:36.365  INFO 7403 --- [main] c.p.p.network.core.GenesisBlock          : MainAccount:pxa2a680a6aed4a84313005009fca42d3f235cc11e
+2018-09-30 17:04:36.530  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.peer.PeerClientInitializer       : 入口1：
+2018-09-30 17:04:36.530  INFO 7403 --- [nioEventLoopGroup-4-1] c.p.p.n.peer.PeerClientInitializer       : 入口1：
+2018-09-30 17:04:36.531  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.peer.PeerClientInitializer       : 入口1：
+2018-09-30 17:04:36.579  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : /39.108.168.179:1906Peer通道激活
+2018-09-30 17:04:36.612  INFO 7403 --- [nioEventLoopGroup-4-1] c.p.p.network.peer.PeerClientHandler     : /47.92.136.217:1906Peer通道激活
+2018-09-30 17:04:36.612  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : /118.190.157.106:1906Peer通道激活
+2018-09-30 17:04:36.657  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:04:36.657  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:04:36.662  INFO 7403 --- [nioEventLoopGroup-4-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:04:37.227  INFO 7403 --- [nioEventLoopGroup-4-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:04:37.227  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:04:37.227  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:04:46.526  INFO 7403 --- [main] c.p.p.n.ehcacheManager.SyncBlockManager  : 【syncBlock：true】
+2018-09-30 17:04:46.528  INFO 7403 --- [main] c.p.p.n.e.SyncParticipantManager         : 【syncParticipant：false】
+2018-09-30 17:04:46.531  INFO 7403 --- [main] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/118.190.157.106:1906
+2018-09-30 17:04:46.533  INFO 7403 --- [main] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/39.108.168.179:1906
+2018-09-30 17:04:46.533  INFO 7403 --- [main] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/47.92.136.217:1906
+2018-09-30 17:04:46.579  INFO 7403 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 7876 (http)
+2018-09-30 17:04:46.586  INFO 7403 --- [main] c.p.photonchain.InesvchainApplication    : Started InesvchainApplication in 22.592 seconds (JVM running for 23.57)
+2018-09-30 17:04:50.559  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:04:50.561  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:04:50.561  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-0C-4C-FC-----47503
+2018-09-30 17:04:50.614  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:04:50.618  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:04:50.618  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-06-4B-51-----47503
+2018-09-30 17:04:53.540  INFO 7403 --- [SaveAddressAndPubkeyExcutor-1] c.p.p.n.e.InitializationManager          : 【addressAndPubkey-time：18】
+2018-09-30 17:04:55.043  INFO 7403 --- [Timer-0] c.p.p.n.ehcacheManager.SyncBlockManager  : 【syncBlock：true】
+2018-09-30 17:04:55.043  INFO 7403 --- [Timer-0] c.p.p.n.e.SyncParticipantManager         : 【syncParticipant：false】
+2018-09-30 17:04:55.044  INFO 7403 --- [Timer-0] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/118.190.157.106:1906
+2018-09-30 17:04:55.045  INFO 7403 --- [Timer-0] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/39.108.168.179:1906
+2018-09-30 17:04:55.045  INFO 7403 --- [Timer-0] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/47.92.136.217:1906
+2018-09-30 17:04:58.723  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:04:58.723  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:04:58.724  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-0C-4C-FC-----47503
+2018-09-30 17:04:58.809  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:04:58.809  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:04:58.809  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-06-4B-51-----47503
+2018-09-30 17:05:00.707  INFO 7403 --- [SaveAddressAndPubkeyExcutor-2] c.p.p.n.e.InitializationManager          : 【addressAndPubkey-time：15】
+2018-09-30 17:05:01.903  INFO 7403 --- [Timer-1] c.p.p.n.ehcacheManager.SyncBlockManager  : 【syncBlock：true】
+2018-09-30 17:05:01.903  INFO 7403 --- [Timer-1] c.p.p.n.e.SyncParticipantManager         : 【syncParticipant：false】
+2018-09-30 17:05:01.904  INFO 7403 --- [Timer-1] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/118.190.157.106:1906
+2018-09-30 17:05:01.904  INFO 7403 --- [Timer-1] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/39.108.168.179:1906
+2018-09-30 17:05:01.905  INFO 7403 --- [Timer-1] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/47.92.136.217:1906
+2018-09-30 17:05:05.690  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:05:05.691  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:05:05.691  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-0C-4C-FC-----47503
+2018-09-30 17:05:05.778  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:05:05.778  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:05:05.778  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-06-4B-51-----47503
+2018-09-30 17:05:07.581  INFO 7403 --- [SaveAddressAndPubkeyExcutor-3] c.p.p.n.e.InitializationManager          : 【addressAndPubkey-time：14】
+2018-09-30 17:05:08.080  INFO 7403 --- [nioEventLoopGroup-4-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:05:09.159  INFO 7403 --- [Timer-2] c.p.p.n.ehcacheManager.SyncBlockManager  : 【syncBlock：true】
+2018-09-30 17:05:09.160  INFO 7403 --- [Timer-2] c.p.p.n.e.SyncParticipantManager         : 【syncParticipant：false】
+2018-09-30 17:05:09.161  INFO 7403 --- [Timer-2] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/118.190.157.106:1906
+2018-09-30 17:05:09.161  INFO 7403 --- [Timer-2] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/39.108.168.179:1906
+2018-09-30 17:05:09.161  INFO 7403 --- [Timer-2] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/47.92.136.217:1906
+2018-09-30 17:05:12.779  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:05:12.780  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:05:12.780  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-0C-4C-FC-----47503
+2018-09-30 17:05:12.896  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:05:12.897  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:05:12.898  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-06-4B-51-----47503
+2018-09-30 17:05:14.618  INFO 7403 --- [SaveAddressAndPubkeyExcutor-4] c.p.p.n.e.InitializationManager          : 【addressAndPubkey-time：8】
+2018-09-30 17:05:15.553  INFO 7403 --- [Timer-3] c.p.p.n.ehcacheManager.SyncBlockManager  : 【syncBlock：true】
+2018-09-30 17:05:15.554  INFO 7403 --- [Timer-3] c.p.p.n.e.SyncParticipantManager         : 【syncParticipant：false】
+2018-09-30 17:05:15.555  INFO 7403 --- [Timer-3] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/118.190.157.106:1906
+2018-09-30 17:05:15.555  INFO 7403 --- [Timer-3] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/39.108.168.179:1906
+2018-09-30 17:05:15.555  INFO 7403 --- [Timer-3] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/47.92.136.217:1906
+2018-09-30 17:05:19.379  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:05:19.380  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:05:19.380  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-0C-4C-FC-----47503
+2018-09-30 17:05:19.420  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:05:19.420  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:05:19.420  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-06-4B-51-----47503
+2018-09-30 17:05:20.972  INFO 7403 --- [SaveAddressAndPubkeyExcutor-5] c.p.p.n.e.InitializationManager          : 【addressAndPubkey-time：10】
+2018-09-30 17:05:21.772  INFO 7403 --- [Timer-4] c.p.p.n.ehcacheManager.SyncBlockManager  : 【syncBlock：true】
+2018-09-30 17:05:21.772  INFO 7403 --- [Timer-4] c.p.p.n.e.SyncParticipantManager         : 【syncParticipant：false】
+2018-09-30 17:05:21.773  INFO 7403 --- [Timer-4] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/118.190.157.106:1906
+2018-09-30 17:05:21.773  INFO 7403 --- [Timer-4] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/39.108.168.179:1906
+2018-09-30 17:05:21.773  INFO 7403 --- [Timer-4] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/47.92.136.217:1906
+2018-09-30 17:05:25.310  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:05:25.310  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:05:25.310  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-06-4B-51-----47503
+2018-09-30 17:05:25.325  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:05:25.326  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:05:25.326  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-0C-4C-FC-----47503
+2018-09-30 17:05:26.784  INFO 7403 --- [SaveAddressAndPubkeyExcutor-1] c.p.p.n.e.InitializationManager          : 【addressAndPubkey-time：5】
+2018-09-30 17:05:27.499  INFO 7403 --- [Timer-5] c.p.p.n.ehcacheManager.SyncBlockManager  : 【syncBlock：true】
+2018-09-30 17:05:27.500  INFO 7403 --- [Timer-5] c.p.p.n.e.SyncParticipantManager         : 【syncParticipant：false】
+2018-09-30 17:05:27.502  INFO 7403 --- [Timer-5] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/118.190.157.106:1906
+2018-09-30 17:05:27.502  INFO 7403 --- [Timer-5] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/39.108.168.179:1906
+2018-09-30 17:05:27.502  INFO 7403 --- [Timer-5] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/47.92.136.217:1906
+2018-09-30 17:05:29.031  INFO 7403 --- [nioEventLoopGroup-4-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:05:29.032  INFO 7403 --- [nioEventLoopGroup-4-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:05:29.032  INFO 7403 --- [nioEventLoopGroup-4-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-00-4F-44-----47503
+2018-09-30 17:05:30.873  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:05:30.874  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:05:30.874  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-0C-4C-FC-----47503
+2018-09-30 17:05:31.035  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:05:31.036  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:05:31.036  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-06-4B-51-----47503
+2018-09-30 17:05:32.894  INFO 7403 --- [SaveAddressAndPubkeyExcutor-2] c.p.p.n.e.InitializationManager          : 【addressAndPubkey-time：3】
+2018-09-30 17:05:33.838  INFO 7403 --- [Timer-6] c.p.p.n.ehcacheManager.SyncBlockManager  : 【syncBlock：true】
+2018-09-30 17:05:33.841  INFO 7403 --- [Timer-6] c.p.p.n.e.SyncParticipantManager         : 【syncParticipant：false】
+2018-09-30 17:05:33.844  INFO 7403 --- [Timer-6] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/118.190.157.106:1906
+2018-09-30 17:05:33.852  INFO 7403 --- [Timer-6] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/39.108.168.179:1906
+2018-09-30 17:05:33.852  INFO 7403 --- [Timer-6] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/47.92.136.217:1906
+2018-09-30 17:05:37.351  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:05:37.352  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:05:37.352  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-0C-4C-FC-----47503
+2018-09-30 17:05:37.414  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:05:37.414  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:05:37.414  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-06-4B-51-----47503
+2018-09-30 17:05:38.838  INFO 7403 --- [SaveAddressAndPubkeyExcutor-3] c.p.p.n.e.InitializationManager          : 【addressAndPubkey-time：6】
+2018-09-30 17:05:39.617  INFO 7403 --- [Timer-7] c.p.p.n.ehcacheManager.SyncBlockManager  : 【syncBlock：true】
+2018-09-30 17:05:39.617  INFO 7403 --- [Timer-7] c.p.p.n.e.SyncParticipantManager         : 【syncParticipant：false】
+2018-09-30 17:05:39.618  INFO 7403 --- [Timer-7] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/118.190.157.106:1906
+2018-09-30 17:05:39.618  INFO 7403 --- [Timer-7] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/39.108.168.179:1906
+2018-09-30 17:05:39.618  INFO 7403 --- [Timer-7] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/47.92.136.217:1906
+2018-09-30 17:05:43.228  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:05:43.229  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:05:43.229  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-0C-4C-FC-----47503
+2018-09-30 17:05:43.494  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:05:43.494  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:05:43.495  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-06-4B-51-----47503
+2018-09-30 17:05:44.715  INFO 7403 --- [SaveAddressAndPubkeyExcutor-4] c.p.p.n.e.InitializationManager          : 【addressAndPubkey-time：3】
+2018-09-30 17:05:45.498  INFO 7403 --- [Timer-8] c.p.p.n.ehcacheManager.SyncBlockManager  : 【syncBlock：true】
+2018-09-30 17:05:45.499  INFO 7403 --- [Timer-8] c.p.p.n.e.SyncParticipantManager         : 【syncParticipant：false】
+2018-09-30 17:05:45.499  INFO 7403 --- [Timer-8] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/118.190.157.106:1906
+2018-09-30 17:05:45.499  INFO 7403 --- [Timer-8] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/39.108.168.179:1906
+2018-09-30 17:05:45.499  INFO 7403 --- [Timer-8] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/47.92.136.217:1906
+2018-09-30 17:05:50.246  INFO 7403 --- [nioEventLoopGroup-4-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:05:50.246  INFO 7403 --- [nioEventLoopGroup-4-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:05:50.247  INFO 7403 --- [nioEventLoopGroup-4-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-00-4F-44-----47503
+2018-09-30 17:05:50.750  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:05:50.751  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:05:50.751  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-06-4B-51-----47503
+2018-09-30 17:05:50.969  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:05:50.969  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:05:50.969  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-0C-4C-FC-----47503
+2018-09-30 17:05:51.686  INFO 7403 --- [SaveAddressAndPubkeyExcutor-5] c.p.p.n.e.InitializationManager          : 【addressAndPubkey-time：6】
+2018-09-30 17:05:52.411  INFO 7403 --- [Timer-9] c.p.p.n.ehcacheManager.SyncBlockManager  : 【syncBlock：true】
+2018-09-30 17:05:52.411  INFO 7403 --- [Timer-9] c.p.p.n.e.SyncParticipantManager         : 【syncParticipant：false】
+2018-09-30 17:05:52.412  INFO 7403 --- [Timer-9] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/118.190.157.106:1906
+2018-09-30 17:05:52.412  INFO 7403 --- [Timer-9] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/39.108.168.179:1906
+2018-09-30 17:05:52.412  INFO 7403 --- [Timer-9] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/47.92.136.217:1906
+2018-09-30 17:05:55.818  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:05:55.818  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:05:55.818  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-0C-4C-FC-----47503
+2018-09-30 17:05:55.929  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:05:55.929  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:05:55.929  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-06-4B-51-----47503
+2018-09-30 17:05:57.204  INFO 7403 --- [SaveAddressAndPubkeyExcutor-1] c.p.p.n.e.InitializationManager          : 【addressAndPubkey-time：1】
+2018-09-30 17:05:58.393  INFO 7403 --- [Timer-10] c.p.p.n.ehcacheManager.SyncBlockManager  : 【syncBlock：true】
+2018-09-30 17:05:58.399  INFO 7403 --- [Timer-10] c.p.p.n.e.SyncParticipantManager         : 【syncParticipant：false】
+2018-09-30 17:05:58.400  INFO 7403 --- [Timer-10] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/118.190.157.106:1906
+2018-09-30 17:05:58.400  INFO 7403 --- [Timer-10] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/39.108.168.179:1906
+2018-09-30 17:05:58.400  INFO 7403 --- [Timer-10] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/47.92.136.217:1906
+2018-09-30 17:06:01.929  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:06:01.930  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:06:01.930  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-0C-4C-FC-----47503
+2018-09-30 17:06:01.966  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:06:01.966  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:06:01.966  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-06-4B-51-----47503
+2018-09-30 17:06:03.510  INFO 7403 --- [SaveAddressAndPubkeyExcutor-2] c.p.p.n.e.InitializationManager          : 【addressAndPubkey-time：7】
+2018-09-30 17:06:04.373  INFO 7403 --- [Timer-11] c.p.p.n.ehcacheManager.SyncBlockManager  : 【syncBlock：true】
+2018-09-30 17:06:04.376  INFO 7403 --- [Timer-11] c.p.p.n.e.SyncParticipantManager         : 【syncParticipant：false】
+2018-09-30 17:06:04.378  INFO 7403 --- [Timer-11] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/118.190.157.106:1906
+2018-09-30 17:06:04.378  INFO 7403 --- [Timer-11] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/39.108.168.179:1906
+2018-09-30 17:06:04.378  INFO 7403 --- [Timer-11] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/47.92.136.217:1906
+2018-09-30 17:06:08.055  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:06:08.055  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:06:08.055  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-0C-4C-FC-----47503
+2018-09-30 17:06:08.110  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:06:08.111  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:06:08.111  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-06-4B-51-----47503
+2018-09-30 17:06:09.524  INFO 7403 --- [SaveAddressAndPubkeyExcutor-3] c.p.p.n.e.InitializationManager          : 【addressAndPubkey-time：7】
+2018-09-30 17:06:10.208  INFO 7403 --- [Timer-12] c.p.p.n.ehcacheManager.SyncBlockManager  : 【syncBlock：true】
+2018-09-30 17:06:10.208  INFO 7403 --- [Timer-12] c.p.p.n.e.SyncParticipantManager         : 【syncParticipant：false】
+2018-09-30 17:06:10.209  INFO 7403 --- [Timer-12] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/118.190.157.106:1906
+2018-09-30 17:06:10.209  INFO 7403 --- [Timer-12] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/39.108.168.179:1906
+2018-09-30 17:06:10.209  INFO 7403 --- [Timer-12] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/47.92.136.217:1906
+2018-09-30 17:06:10.557  INFO 7403 --- [nioEventLoopGroup-4-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:06:10.558  INFO 7403 --- [nioEventLoopGroup-4-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:06:10.558  INFO 7403 --- [nioEventLoopGroup-4-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-00-4F-44-----47503
+2018-09-30 17:06:13.685  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:06:13.685  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:06:13.685  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-0C-4C-FC-----47503
+2018-09-30 17:06:13.750  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:06:13.750  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:06:13.750  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-06-4B-51-----47503
+2018-09-30 17:06:15.015  INFO 7403 --- [SaveAddressAndPubkeyExcutor-4] c.p.p.n.e.InitializationManager          : 【addressAndPubkey-time：5】
+2018-09-30 17:06:15.696  INFO 7403 --- [Timer-13] c.p.p.n.ehcacheManager.SyncBlockManager  : 【syncBlock：true】
+2018-09-30 17:06:15.696  INFO 7403 --- [Timer-13] c.p.p.n.e.SyncParticipantManager         : 【syncParticipant：false】
+2018-09-30 17:06:15.697  INFO 7403 --- [Timer-13] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/118.190.157.106:1906
+2018-09-30 17:06:15.697  INFO 7403 --- [Timer-13] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/39.108.168.179:1906
+2018-09-30 17:06:15.698  INFO 7403 --- [Timer-13] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/47.92.136.217:1906
+2018-09-30 17:06:19.287  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:06:19.287  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:06:19.287  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-0C-4C-FC-----47503
+2018-09-30 17:06:19.368  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:06:19.368  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:06:19.368  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-06-4B-51-----47503
+2018-09-30 17:06:20.782  INFO 7403 --- [SaveAddressAndPubkeyExcutor-5] c.p.p.n.e.InitializationManager          : 【addressAndPubkey-time：5】
+2018-09-30 17:06:21.460  INFO 7403 --- [Timer-14] c.p.p.n.ehcacheManager.SyncBlockManager  : 【syncBlock：true】
+2018-09-30 17:06:21.460  INFO 7403 --- [Timer-14] c.p.p.n.e.SyncParticipantManager         : 【syncParticipant：false】
+2018-09-30 17:06:21.461  INFO 7403 --- [Timer-14] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/118.190.157.106:1906
+2018-09-30 17:06:21.461  INFO 7403 --- [Timer-14] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/39.108.168.179:1906
+2018-09-30 17:06:21.461  INFO 7403 --- [Timer-14] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/47.92.136.217:1906
+2018-09-30 17:06:24.964  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:06:24.964  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:06:24.964  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-0C-4C-FC-----47503
+2018-09-30 17:06:25.386  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:06:25.386  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:06:25.386  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-06-4B-51-----47503
+2018-09-30 17:06:26.431  INFO 7403 --- [SaveAddressAndPubkeyExcutor-1] c.p.p.n.e.InitializationManager          : 【addressAndPubkey-time：3】
+2018-09-30 17:06:27.088  INFO 7403 --- [Timer-15] c.p.p.n.ehcacheManager.SyncBlockManager  : 【syncBlock：true】
+2018-09-30 17:06:27.089  INFO 7403 --- [Timer-15] c.p.p.n.e.SyncParticipantManager         : 【syncParticipant：false】
+2018-09-30 17:06:27.089  INFO 7403 --- [Timer-15] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/118.190.157.106:1906
+2018-09-30 17:06:27.089  INFO 7403 --- [Timer-15] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/39.108.168.179:1906
+2018-09-30 17:06:27.089  INFO 7403 --- [Timer-15] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/47.92.136.217:1906
+2018-09-30 17:06:30.500  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:06:30.500  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:06:30.501  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-0C-4C-FC-----47503
+2018-09-30 17:06:31.508  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:06:31.509  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:06:31.509  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-06-4B-51-----47503
+2018-09-30 17:06:31.678  INFO 7403 --- [nioEventLoopGroup-4-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:06:31.679  INFO 7403 --- [nioEventLoopGroup-4-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:06:31.679  INFO 7403 --- [nioEventLoopGroup-4-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-00-4F-44-----47503
+2018-09-30 17:06:32.918  INFO 7403 --- [SaveAddressAndPubkeyExcutor-2] c.p.p.n.e.InitializationManager          : 【addressAndPubkey-time：4】
+2018-09-30 17:06:33.524  INFO 7403 --- [Timer-16] c.p.p.n.ehcacheManager.SyncBlockManager  : 【syncBlock：true】
+2018-09-30 17:06:33.524  INFO 7403 --- [Timer-16] c.p.p.n.e.SyncParticipantManager         : 【syncParticipant：false】
+2018-09-30 17:06:33.525  INFO 7403 --- [Timer-16] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/118.190.157.106:1906
+2018-09-30 17:06:33.525  INFO 7403 --- [Timer-16] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/39.108.168.179:1906
+2018-09-30 17:06:33.525  INFO 7403 --- [Timer-16] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/47.92.136.217:1906
+2018-09-30 17:06:37.142  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:06:37.142  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:06:37.142  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-0C-4C-FC-----47503
+2018-09-30 17:06:37.255  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:06:37.256  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:06:37.256  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-06-4B-51-----47503
+2018-09-30 17:06:38.777  INFO 7403 --- [SaveAddressAndPubkeyExcutor-3] c.p.p.n.e.InitializationManager          : 【addressAndPubkey-time：2】
+2018-09-30 17:06:39.622  INFO 7403 --- [Timer-17] c.p.p.n.ehcacheManager.SyncBlockManager  : 【syncBlock：true】
+2018-09-30 17:06:39.622  INFO 7403 --- [Timer-17] c.p.p.n.e.SyncParticipantManager         : 【syncParticipant：false】
+2018-09-30 17:06:39.623  INFO 7403 --- [Timer-17] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/118.190.157.106:1906
+2018-09-30 17:06:39.623  INFO 7403 --- [Timer-17] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/39.108.168.179:1906
+2018-09-30 17:06:39.623  INFO 7403 --- [Timer-17] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/47.92.136.217:1906
+2018-09-30 17:06:43.044  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:06:43.045  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:06:43.045  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-0C-4C-FC-----47503
+2018-09-30 17:06:43.114  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:06:43.114  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:06:43.114  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-06-4B-51-----47503
+2018-09-30 17:06:44.589  INFO 7403 --- [SaveAddressAndPubkeyExcutor-4] c.p.p.n.e.InitializationManager          : 【addressAndPubkey-time：0】
+2018-09-30 17:06:45.336  INFO 7403 --- [Timer-18] c.p.p.n.ehcacheManager.SyncBlockManager  : 【syncBlock：true】
+2018-09-30 17:06:45.336  INFO 7403 --- [Timer-18] c.p.p.n.e.SyncParticipantManager         : 【syncParticipant：false】
+2018-09-30 17:06:45.336  INFO 7403 --- [Timer-18] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/118.190.157.106:1906
+2018-09-30 17:06:45.337  INFO 7403 --- [Timer-18] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/39.108.168.179:1906
+2018-09-30 17:06:45.337  INFO 7403 --- [Timer-18] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/47.92.136.217:1906
+2018-09-30 17:06:48.790  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:06:48.790  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:06:48.790  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-0C-4C-FC-----47503
+2018-09-30 17:06:48.808  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:06:48.808  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:06:48.808  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-06-4B-51-----47503
+2018-09-30 17:06:50.572  INFO 7403 --- [SaveAddressAndPubkeyExcutor-5] c.p.p.n.e.InitializationManager          : 【addressAndPubkey-time：6】
+2018-09-30 17:06:51.207  INFO 7403 --- [nioEventLoopGroup-4-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:06:51.668  INFO 7403 --- [Timer-19] c.p.p.n.ehcacheManager.SyncBlockManager  : 【syncBlock：true】
+2018-09-30 17:06:51.669  INFO 7403 --- [Timer-19] c.p.p.n.e.SyncParticipantManager         : 【syncParticipant：false】
+2018-09-30 17:06:51.672  INFO 7403 --- [Timer-19] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/118.190.157.106:1906
+2018-09-30 17:06:51.672  INFO 7403 --- [Timer-19] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/39.108.168.179:1906
+2018-09-30 17:06:51.672  INFO 7403 --- [Timer-19] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/47.92.136.217:1906
+2018-09-30 17:06:55.287  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:06:55.287  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:06:55.287  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-0C-4C-FC-----47503
+2018-09-30 17:06:55.373  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:06:55.373  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:06:55.373  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-06-4B-51-----47503
+2018-09-30 17:06:57.022  INFO 7403 --- [SaveAddressAndPubkeyExcutor-1] c.p.p.n.e.InitializationManager          : 【addressAndPubkey-time：5】
+2018-09-30 17:06:57.959  INFO 7403 --- [Timer-20] c.p.p.n.ehcacheManager.SyncBlockManager  : 【syncBlock：true】
+2018-09-30 17:06:57.959  INFO 7403 --- [Timer-20] c.p.p.n.e.SyncParticipantManager         : 【syncParticipant：false】
+2018-09-30 17:06:57.959  INFO 7403 --- [Timer-20] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/118.190.157.106:1906
+2018-09-30 17:06:57.959  INFO 7403 --- [Timer-20] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/39.108.168.179:1906
+2018-09-30 17:06:57.959  INFO 7403 --- [Timer-20] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/47.92.136.217:1906
+2018-09-30 17:07:01.337  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:07:01.339  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:07:01.340  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-0C-4C-FC-----47503
+2018-09-30 17:07:01.403  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:07:01.404  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:07:01.404  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-06-4B-51-----47503
+2018-09-30 17:07:03.194  INFO 7403 --- [SaveAddressAndPubkeyExcutor-2] c.p.p.n.e.InitializationManager          : 【addressAndPubkey-time：1】
+2018-09-30 17:07:04.273  INFO 7403 --- [Timer-21] c.p.p.n.ehcacheManager.SyncBlockManager  : 【syncBlock：true】
+2018-09-30 17:07:04.273  INFO 7403 --- [Timer-21] c.p.p.n.e.SyncParticipantManager         : 【syncParticipant：false】
+2018-09-30 17:07:04.274  INFO 7403 --- [Timer-21] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/118.190.157.106:1906
+2018-09-30 17:07:04.274  INFO 7403 --- [Timer-21] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/39.108.168.179:1906
+2018-09-30 17:07:04.274  INFO 7403 --- [Timer-21] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/47.92.136.217:1906
+2018-09-30 17:07:07.733  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:07:07.733  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:07:07.733  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-0C-4C-FC-----47503
+2018-09-30 17:07:08.430  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:07:08.430  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:07:08.430  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-06-4B-51-----47503
+2018-09-30 17:07:09.649  INFO 7403 --- [SaveAddressAndPubkeyExcutor-3] c.p.p.n.e.InitializationManager          : 【addressAndPubkey-time：6】
+2018-09-30 17:07:10.647  INFO 7403 --- [Timer-22] c.p.p.n.ehcacheManager.SyncBlockManager  : 【syncBlock：true】
+2018-09-30 17:07:10.648  INFO 7403 --- [Timer-22] c.p.p.n.e.SyncParticipantManager         : 【syncParticipant：false】
+2018-09-30 17:07:10.648  INFO 7403 --- [Timer-22] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/118.190.157.106:1906
+2018-09-30 17:07:10.648  INFO 7403 --- [Timer-22] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/39.108.168.179:1906
+2018-09-30 17:07:10.648  INFO 7403 --- [Timer-22] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/47.92.136.217:1906
+2018-09-30 17:07:10.850  INFO 7403 --- [nioEventLoopGroup-4-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:07:10.850  INFO 7403 --- [nioEventLoopGroup-4-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 2000
+2018-09-30 17:07:10.850  INFO 7403 --- [nioEventLoopGroup-4-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-00-4F-44-----47503
+2018-09-30 17:07:13.621  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:07:13.621  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 1503
+2018-09-30 17:07:13.622  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-0C-4C-FC-----47503
+2018-09-30 17:07:13.845  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:07:13.845  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ================ 1503
+2018-09-30 17:07:13.845  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.n.ehcacheManager.SyncBlockManager  : ---------------00-16-3E-06-4B-51-----47503
+2018-09-30 17:07:15.548  INFO 7403 --- [SaveAddressAndPubkeyExcutor-4] c.p.p.n.e.InitializationManager          : 【addressAndPubkey-time：10】
+2018-09-30 17:07:16.409  INFO 7403 --- [Timer-23] c.p.p.n.ehcacheManager.SyncBlockManager  : 【syncBlock：false】
+2018-09-30 17:07:16.410  INFO 7403 --- [Timer-23] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/118.190.157.106:1906
+2018-09-30 17:07:16.410  INFO 7403 --- [Timer-23] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/39.108.168.179:1906
+2018-09-30 17:07:16.410  INFO 7403 --- [Timer-23] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/47.92.136.217:1906
+2018-09-30 17:07:16.421  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:07:16.422  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.core.MessageProcessor      : 【SYNC_TRANSACTION】--- UnconfirmedTranList0
+2018-09-30 17:07:16.422  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.core.MessageProcessor      : 【SYNC_TRANSACTION】------ UnconfirmedUnVarTranList0
+2018-09-30 17:07:16.451  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:07:16.452  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.core.MessageProcessor      : 【SYNC_TRANSACTION】--- UnconfirmedTranList0
+2018-09-30 17:07:16.452  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.core.MessageProcessor      : 【SYNC_TRANSACTION】------ UnconfirmedUnVarTranList0
+2018-09-30 17:07:17.426  INFO 7403 --- [Timer-24] c.p.p.n.e.SyncParticipantManager         : 【syncParticipant：true】
+2018-09-30 17:07:17.427  INFO 7403 --- [Timer-24] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/118.190.157.106:1906
+2018-09-30 17:07:17.427  INFO 7403 --- [Timer-24] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/39.108.168.179:1906
+2018-09-30 17:07:17.427  INFO 7403 --- [Timer-24] c.p.p.n.e.NioSocketChannelManager        : ①写出地址：/47.92.136.217:1906
+2018-09-30 17:07:17.436  INFO 7403 --- [nioEventLoopGroup-6-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:07:17.469  INFO 7403 --- [nioEventLoopGroup-5-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:07:18.439  INFO 7403 --- [Timer-25] c.p.photonchain.network.core.SyncTimer   : 同步完成铸造机列表：{}
+2018-09-30 17:07:18.440  INFO 7403 --- [Timer-25] c.p.p.n.e.SyncParticipantManager         : 【syncParticipant：false】
+2018-09-30 17:07:18.926  INFO 7403 --- [Timer-25] c.p.photonchain.network.core.SyncTimer   : 同步完成总资产：3506606050000000
+2018-09-30 17:07:25.310  INFO 7403 --- [Timer-26] c.p.photonchain.network.core.SyncTimer   : 【每小时交易数="datas":[[1534489200000,11],[1534492800000,0],[1534496400000,362],[1534500000000,92],[1534503600000,0],[1534507200000,0],[1534510800000,0],[1534514400000,0],[1534518000000,0],[1534521600000,0],[1534525200000,0],[1534528800000,0],[1534532400000,0],[1534536000000,0],[1534539600000,0],[1534543200000,0],[1534546800000,0],[1534550400000,0],[1534554000000,0],[1534557600000,0],[1534561200000,0],[1534564800000,0],[1534568400000,0],[1534572000000,0],[1534575600000,0],[1534579200000,0],[1534582800000,0],[1534586400000,0],[1534590000000,0],[1534593600000,0],[1534597200000,0],[1534600800000,0],[1534604400000,0],[1534608000000,0],[1534611600000,0],[1534615200000,0],[1534618800000,0],[1534622400000,0],[1534626000000,0],[1534629600000,0],[1534633200000,0],[1534636800000,0],[1534640400000,0],[1534644000000,0],[1534647600000,0],[1534651200000,0],[1534654800000,0],[1534658400000,0],[1534662000000,0],[1534665600000,0],[1534669200000,0],[1534672800000,0],[1534676400000,0],[1534680000000,0],[1534683600000,0],[1534687200000,0],[1534690800000,0],[1534694400000,0],[1534698000000,0],[1534701600000,0],[1534705200000,0],[1534708800000,0],[1534712400000,0],[1534716000000,0],[1534719600000,0],[1534723200000,0],[1534726800000,272],[1534730400000,376],[1534734000000,344],[1534737600000,0],[1534741200000,51],[1534744800000,366],[1534748400000,377],[1534752000000,372],[1534755600000,390],[1534759200000,107],[1534762800000,371],[1534766400000,377],[1534770000000,328],[1534773600000,9],[1534777200000,0],[1534780800000,0],[1534784400000,0],[1534788000000,0],[1534791600000,0],[1534795200000,0],[1534798800000,0],[1534802400000,0],[1534806000000,0],[1534809600000,0],[1534813200000,270],[1534816800000,306],[1534820400000,305],[1534824000000,206],[1534827600000,7],[1534831200000,390],[1534834800000,279],[1534838400000,257],[1534842000000,338],[1534845600000,16],[1534849200000,0],[1534852800000,0],[1534856400000,0],[1534860000000,0],[1534863600000,0],[1534867200000,0],[1534870800000,0],[1534874400000,0],[1534878000000,0],[1534881600000,0],[1534885200000,0],[1534888800000,0],[1534892400000,0],[1534896000000,0],[1534899600000,270],[1534903200000,279],[1534906800000,287],[1534910400000,0],[1534914000000,52],[1534917600000,237],[1534921200000,318],[1534924800000,319],[1534928400000,323],[1534932000000,17],[1534935600000,0],[1534939200000,0],[1534942800000,0],[1534946400000,0],[1534950000000,0],[1534953600000,0],[1534957200000,0],[1534960800000,0],[1534964400000,0],[1534968000000,0],[1534971600000,0],[1534975200000,0],[1534978800000,0],[1534982400000,0],[1534986000000,213],[1534989600000,336],[1534993200000,307],[1534996800000,132],[1535000400000,0],[1535004000000,170],[1535007600000,284],[1535011200000,237],[1535014800000,311],[1535018400000,361],[1535022000000,360],[1535025600000,360],[1535029200000,360],[1535032800000,360],[1535036400000,360],[1535040000000,360],[1535043600000,360],[1535047200000,360],[1535050800000,360],[1535054400000,360],[1535058000000,359],[1535061600000,360],[1535065200000,360],[1535068800000,360],[1535072400000,48],[1535076000000,367],[1535079600000,322],[1535083200000,0],[1535086800000,78],[1535090400000,176],[1535094000000,297],[1535097600000,65],[1535101200000,0],[1535104800000,0],[1535108400000,0],[1535112000000,0],[1535115600000,0],[1535119200000,0],[1535122800000,0],[1535126400000,0],[1535130000000,0],[1535133600000,0],[1535137200000,0],[1535140800000,0],[1535144400000,0],[1535148000000,0],[1535151600000,0],[1535155200000,0],[1535158800000,0],[1535162400000,0],[1535166000000,0],[1535169600000,0],[1535173200000,0],[1535176800000,0],[1535180400000,0],[1535184000000,0],[1535187600000,0],[1535191200000,0],[1535194800000,0],[1535198400000,0],[1535202000000,0],[1535205600000,0],[1535209200000,0],[1535212800000,0],[1535216400000,0],[1535220000000,0],[1535223600000,0],[1535227200000,0],[1535230800000,0],[1535234400000,0],[1535238000000,0],[1535241600000,0],[1535245200000,0],[1535248800000,0],[1535252400000,0],[1535256000000,0],[1535259600000,0],[1535263200000,0],[1535266800000,0],[1535270400000,0],[1535274000000,0],[1535277600000,0],[1535281200000,0],[1535284800000,0],[1535288400000,0],[1535292000000,0],[1535295600000,0],[1535299200000,0],[1535302800000,0],[1535306400000,0],[1535310000000,0],[1535313600000,0],[1535317200000,0],[1535320800000,0],[1535324400000,0],[1535328000000,0],[1535331600000,0],[1535335200000,0],[1535338800000,0],[1535342400000,0],[1535346000000,0],[1535349600000,0],[1535353200000,0],[1535356800000,0],[1535360400000,0],[1535364000000,0],[1535367600000,0],[1535371200000,0],[1535374800000,0],[1535378400000,0],[1535382000000,0],[1535385600000,0],[1535389200000,0],[1535392800000,0],[1535396400000,0],[1535400000000,0],[1535403600000,0],[1535407200000,0],[1535410800000,0],[1535414400000,0],[1535418000000,0],[1535421600000,0],[1535425200000,0],[1535428800000,0],[1535432400000,0],[1535436000000,0],[1535439600000,0],[1535443200000,0],[1535446800000,0],[1535450400000,0],[1535454000000,0],[1535457600000,0],[1535461200000,0],[1535464800000,0],[1535468400000,0],[1535472000000,0],[1535475600000,0],[1535479200000,0],[1535482800000,0],[1535486400000,0],[1535490000000,0],[1535493600000,0],[1535497200000,0],[1535500800000,0],[1535504400000,0],[1535508000000,0],[1535511600000,0],[1535515200000,0],[1535518800000,0],[1535522400000,0],[1535526000000,0],[1535529600000,0],[1535533200000,0],[1535536800000,0],[1535540400000,0],[1535544000000,0],[1535547600000,0],[1535551200000,0],[1535554800000,0],[1535558400000,0],[1535562000000,0],[1535565600000,0],[1535569200000,0],[1535572800000,0],[1535576400000,0],[1535580000000,0],[1535583600000,0],[1535587200000,0],[1535590800000,0],[1535594400000,0],[1535598000000,10],[1535601600000,0],[1535605200000,0],[1535608800000,45],[1535612400000,0],[1535616000000,310],[1535619600000,0],[1535623200000,0],[1535626800000,0],[1535630400000,0],[1535634000000,0],[1535637600000,0],[1535641200000,0],[1535644800000,0],[1535648400000,0],[1535652000000,0],[1535655600000,0],[1535659200000,0],[1535662800000,0],[1535666400000,0],[1535670000000,0],[1535673600000,0],[1535677200000,0],[1535680800000,51],[1535684400000,122],[1535688000000,0],[1535691600000,0],[1535695200000,0],[1535698800000,0],[1535702400000,348],[1535706000000,359],[1535709600000,1],[1535713200000,0],[1535716800000,0],[1535720400000,0],[1535724000000,0],[1535727600000,0],[1535731200000,0],[1535734800000,0],[1535738400000,0],[1535742000000,0],[1535745600000,0],[1535749200000,0],[1535752800000,0],[1535756400000,0],[1535760000000,0],[1535763600000,0],[1535767200000,0],[1535770800000,0],[1535774400000,0],[1535778000000,0],[1535781600000,0],[1535785200000,0],[1535788800000,0],[1535792400000,0],[1535796000000,0],[1535799600000,0],[1535803200000,0],[1535806800000,0],[1535810400000,0],[1535814000000,0],[1535817600000,0],[1535821200000,0],[1535824800000,0],[1535828400000,0],[1535832000000,0],[1535835600000,0],[1535839200000,0],[1535842800000,0],[1535846400000,0],[1535850000000,0],[1535853600000,0],[1535857200000,0],[1535860800000,0],[1535864400000,0],[1535868000000,0],[1535871600000,0],[1535875200000,0],[1535878800000,0],[1535882400000,0],[1535886000000,0],[1535889600000,0],[1535893200000,0],[1535896800000,0],[1535900400000,0],[1535904000000,0],[1535907600000,0],[1535911200000,0],[1535914800000,0],[1535918400000,0],[1535922000000,0],[1535925600000,0],[1535929200000,0],[1535932800000,0],[1535936400000,5],[1535940000000,0],[1535943600000,66],[1535947200000,0],[1535950800000,43],[1535954400000,308],[1535958000000,378],[1535961600000,363],[1535965200000,347],[1535968800000,348],[1535972400000,310],[1535976000000,292],[1535979600000,267],[1535983200000,282],[1535986800000,261],[1535990400000,262],[1535994000000,257],[1535997600000,257],[1536001200000,244],[1536004800000,238],[1536008400000,237],[1536012000000,229],[1536015600000,246],[1536019200000,255],[1536022800000,285],[1536026400000,374],[1536030000000,381],[1536033600000,287],[1536037200000,132],[1536040800000,362],[1536044400000,375],[1536048000000,370],[1536051600000,346],[1536055200000,293],[1536058800000,250],[1536062400000,0],[1536066000000,0],[1536069600000,0],[1536073200000,0],[1536076800000,0],[1536080400000,0],[1536084000000,0],[1536087600000,0],[1536091200000,0],[1536094800000,0],[1536098400000,0],[1536102000000,0],[1536105600000,0],[1536109200000,288],[1536112800000,338],[1536116400000,370],[1536120000000,260],[1536123600000,116],[1536127200000,229],[1536130800000,0],[1536134400000,210],[1536138000000,220],[1536141600000,0],[1536145200000,0],[1536148800000,0],[1536152400000,0],[1536156000000,0],[1536159600000,0],[1536163200000,0],[1536166800000,0],[1536170400000,0],[1536174000000,0],[1536177600000,0],[1536181200000,0],[1536184800000,0],[1536188400000,0],[1536192000000,0],[1536195600000,0],[1536199200000,0],[1536202800000,0],[1536206400000,0],[1536210000000,0],[1536213600000,0],[1536217200000,0],[1536220800000,0],[1536224400000,0],[1536228000000,0],[1536231600000,0],[1536235200000,0],[1536238800000,0],[1536242400000,0],[1536246000000,0],[1536249600000,0],[1536253200000,0],[1536256800000,0],[1536260400000,0],[1536264000000,0],[1536267600000,0],[1536271200000,0],[1536274800000,0],[1536278400000,0],[1536282000000,0],[1536285600000,0],[1536289200000,0],[1536292800000,0],[1536296400000,0],[1536300000000,0],[1536303600000,0],[1536307200000,0],[1536310800000,0],[1536314400000,0],[1536318000000,0],[1536321600000,0],[1536325200000,0],[1536328800000,0],[1536332400000,0],[1536336000000,0],[1536339600000,0],[1536343200000,0],[1536346800000,0],[1536350400000,0],[1536354000000,0],[1536357600000,0],[1536361200000,0],[1536364800000,0],[1536368400000,0],[1536372000000,0],[1536375600000,0],[1536379200000,0],[1536382800000,0],[1536386400000,0],[1536390000000,0],[1536393600000,0],[1536397200000,0],[1536400800000,0],[1536404400000,0],[1536408000000,0],[1536411600000,0],[1536415200000,0],[1536418800000,0],[1536422400000,0],[1536426000000,0],[1536429600000,0],[1536433200000,0],[1536436800000,0],[1536440400000,0],[1536444000000,0],[1536447600000,0],[1536451200000,0],[1536454800000,0],[1536458400000,0],[1536462000000,0],[1536465600000,0],[1536469200000,0],[1536472800000,0],[1536476400000,0],[1536480000000,0],[1536483600000,0],[1536487200000,0],[1536490800000,0],[1536494400000,0],[1536498000000,0],[1536501600000,0],[1536505200000,0],[1536508800000,0],[1536512400000,0],[1536516000000,0],[1536519600000,0],[1536523200000,0],[1536526800000,0],[1536530400000,0],[1536534000000,0],[1536537600000,0],[1536541200000,0],[1536544800000,0],[1536548400000,0],[1536552000000,0],[1536555600000,0],[1536559200000,0],[1536562800000,0],[1536566400000,0],[1536570000000,0],[1536573600000,0],[1536577200000,0],[1536580800000,0],[1536584400000,0],[1536588000000,0],[1536591600000,0],[1536595200000,0],[1536598800000,0],[1536602400000,0],[1536606000000,0],[1536609600000,0],[1536613200000,0],[1536616800000,0],[1536620400000,0],[1536624000000,0],[1536627600000,0],[1536631200000,0],[1536634800000,0],[1536638400000,0],[1536642000000,0],[1536645600000,0],[1536649200000,0],[1536652800000,2],[1536656400000,0],[1536660000000,0],[1536663600000,0],[1536667200000,0],[1536670800000,0],[1536674400000,0],[1536678000000,0],[1536681600000,0],[1536685200000,0],[1536688800000,0],[1536692400000,0],[1536696000000,0],[1536699600000,0],[1536703200000,0],[1536706800000,0],[1536710400000,0],[1536714000000,0],[1536717600000,166],[1536721200000,359],[1536724800000,6],[1536728400000,116],[1536732000000,121],[1536735600000,0],[1536739200000,0],[1536742800000,0],[1536746400000,0],[1536750000000,0],[1536753600000,0],[1536757200000,0],[1536760800000,0],[1536764400000,0],[1536768000000,0],[1536771600000,0],[1536775200000,0],[1536778800000,0],[1536782400000,0],[1536786000000,0],[1536789600000,0],[1536793200000,0],[1536796800000,0],[1536800400000,0],[1536804000000,0],[1536807600000,0],[1536811200000,0],[1536814800000,0],[1536818400000,0],[1536822000000,0],[1536825600000,0],[1536829200000,0],[1536832800000,0],[1536836400000,0],[1536840000000,0],[1536843600000,0],[1536847200000,0],[1536850800000,0],[1536854400000,0],[1536858000000,0],[1536861600000,0],[1536865200000,0],[1536868800000,0],[1536872400000,0],[1536876000000,0],[1536879600000,0],[1536883200000,0],[1536886800000,0],[1536890400000,0],[1536894000000,1],[1536897600000,0],[1536901200000,1],[1536904800000,0],[1536908400000,0],[1536912000000,0],[1536915600000,182],[1536919200000,5],[1536922800000,0],[1536926400000,0],[1536930000000,0],[1536933600000,0],[1536937200000,0],[1536940800000,0],[1536944400000,0],[1536948000000,0],[1536951600000,0],[1536955200000,0],[1536958800000,0],[1536962400000,0],[1536966000000,0],[1536969600000,0],[1536973200000,0],[1536976800000,0],[1536980400000,0],[1536984000000,0],[1536987600000,0],[1536991200000,0],[1536994800000,0],[1536998400000,0],[1537002000000,0],[1537005600000,0],[1537009200000,0],[1537012800000,0],[1537016400000,0],[1537020000000,0],[1537023600000,0],[1537027200000,0],[1537030800000,0],[1537034400000,0],[1537038000000,0],[1537041600000,0],[1537045200000,0],[1537048800000,0],[1537052400000,0],[1537056000000,0],[1537059600000,0],[1537063200000,0],[1537066800000,0],[1537070400000,0],[1537074000000,0],[1537077600000,0],[1537081200000,0],[1537084800000,0],[1537088400000,0],[1537092000000,0],[1537095600000,0],[1537099200000,0],[1537102800000,0],[1537106400000,0],[1537110000000,0],[1537113600000,0],[1537117200000,0],[1537120800000,0],[1537124400000,0],[1537128000000,0],[1537131600000,0],[1537135200000,0],[1537138800000,0],[1537142400000,0],[1537146000000,149],[1537149600000,365],[1537153200000,347],[1537156800000,0],[1537160400000,100],[1537164000000,366],[1537167600000,350],[1537171200000,49],[1537174800000,63],[1537178400000,87],[1537182000000,153],[1537185600000,206],[1537189200000,96],[1537192800000,0],[1537196400000,0],[1537200000000,0],[1537203600000,0],[1537207200000,0],[1537210800000,0],[1537214400000,0],[1537218000000,0],[1537221600000,0],[1537225200000,0],[1537228800000,0],[1537232400000,0],[1537236000000,42],[1537239600000,77],[1537243200000,100],[1537246800000,0],[1537250400000,0],[1537254000000,0],[1537257600000,0],[1537261200000,0],[1537264800000,0],[1537268400000,0],[1537272000000,0],[1537275600000,0],[1537279200000,0],[1537282800000,0],[1537286400000,0],[1537290000000,0],[1537293600000,0],[1537297200000,0],[1537300800000,0],[1537304400000,0],[1537308000000,0],[1537311600000,0],[1537315200000,0],[1537318800000,0],[1537322400000,0],[1537326000000,0],[1537329600000,0],[1537333200000,0],[1537336800000,209],[1537340400000,362],[1537344000000,361],[1537347600000,360],[1537351200000,357],[1537354800000,358],[1537358400000,359],[1537362000000,359],[1537365600000,358],[1537369200000,359],[1537372800000,360],[1537376400000,360],[1537380000000,358],[1537383600000,360],[1537387200000,359],[1537390800000,360],[1537394400000,360],[1537398000000,356],[1537401600000,49],[1537405200000,0],[1537408800000,0],[1537412400000,0],[1537416000000,0],[1537419600000,0],[1537423200000,0],[1537426800000,0],[1537430400000,0],[1537434000000,0],[1537437600000,0],[1537441200000,0],[1537444800000,0],[1537448400000,0],[1537452000000,0],[1537455600000,0],[1537459200000,0],[1537462800000,0],[1537466400000,0],[1537470000000,0],[1537473600000,0],[1537477200000,0],[1537480800000,0],[1537484400000,0],[1537488000000,0],[1537491600000,0],[1537495200000,0],[1537498800000,0],[1537502400000,0],[1537506000000,0],[1537509600000,0],[1537513200000,0],[1537516800000,0],[1537520400000,0],[1537524000000,0],[1537527600000,0],[1537531200000,0],[1537534800000,0],[1537538400000,0],[1537542000000,0],[1537545600000,0],[1537549200000,0],[1537552800000,0],[1537556400000,0],[1537560000000,0],[1537563600000,0],[1537567200000,0],[1537570800000,0],[1537574400000,0],[1537578000000,0],[1537581600000,0],[1537585200000,0],[1537588800000,0],[1537592400000,0],[1537596000000,0],[1537599600000,0],[1537603200000,0],[1537606800000,0],[1537610400000,0],[1537614000000,0],[1537617600000,0],[1537621200000,0],[1537624800000,0],[1537628400000,0],[1537632000000,0],[1537635600000,0],[1537639200000,0],[1537642800000,0],[1537646400000,0],[1537650000000,0],[1537653600000,0],[1537657200000,0],[1537660800000,0],[1537664400000,0],[1537668000000,0],[1537671600000,0],[1537675200000,0],[1537678800000,0],[1537682400000,0],[1537686000000,0],[1537689600000,0],[1537693200000,0],[1537696800000,0],[1537700400000,0],[1537704000000,0],[1537707600000,0],[1537711200000,0],[1537714800000,0],[1537718400000,0],[1537722000000,0],[1537725600000,0],[1537729200000,0],[1537732800000,0],[1537736400000,0],[1537740000000,0],[1537743600000,0],[1537747200000,0],[1537750800000,0],[1537754400000,0],[1537758000000,0],[1537761600000,0],[1537765200000,0],[1537768800000,0],[1537772400000,0],[1537776000000,0],[1537779600000,0],[1537783200000,0],[1537786800000,0],[1537790400000,0],[1537794000000,0],[1537797600000,0],[1537801200000,0],[1537804800000,0],[1537808400000,0],[1537812000000,0],[1537815600000,0],[1537819200000,0],[1537822800000,0],[1537826400000,0],[1537830000000,0],[1537833600000,0],[1537837200000,0],[1537840800000,0],[1537844400000,0],[1537848000000,0],[1537851600000,0],[1537855200000,0],[1537858800000,0],[1537862400000,0],[1537866000000,0],[1537869600000,0],[1537873200000,0],[1537876800000,0],[1537880400000,0],[1537884000000,0],[1537887600000,0],[1537891200000,0],[1537894800000,0],[1537898400000,0],[1537902000000,0],[1537905600000,0],[1537909200000,0],[1537912800000,0],[1537916400000,0],[1537920000000,0],[1537923600000,0],[1537927200000,1],[1537930800000,1],[1537934400000,0],[1537938000000,0],[1537941600000,0],[1537945200000,0],[1537948800000,0],[1537952400000,0],[1537956000000,0],[1537959600000,0],[1537963200000,0],[1537966800000,0],[1537970400000,0],[1537974000000,0],[1537977600000,0],[1537981200000,0],[1537984800000,0],[1537988400000,0],[1537992000000,0],[1537995600000,0],[1537999200000,0],[1538002800000,0],[1538006400000,0],[1538010000000,0],[1538013600000,0],[1538017200000,0],[1538020800000,0],[1538024400000,0],[1538028000000,95],[1538031600000,364],[1538035200000,363],[1538038800000,359],[1538042400000,94],[1538046000000,0],[1538049600000,0],[1538053200000,0],[1538056800000,0],[1538060400000,0],[1538064000000,0],[1538067600000,0],[1538071200000,0],[1538074800000,0],[1538078400000,0],[1538082000000,0],[1538085600000,0],[1538089200000,0],[1538092800000,0],[1538096400000,0],[1538100000000,0],[1538103600000,0],[1538107200000,0],[1538110800000,5],[1538114400000,15],[1538118000000,171],[1538121600000,326],[1538125200000,355],[1538128800000,363],[1538132400000,349],[1538136000000,372],[1538139600000,301],[1538143200000,360],[1538146800000,359],[1538150400000,360],[1538154000000,359],[1538157600000,360],[1538161200000,358],[1538164800000,359],[1538168400000,360],[1538172000000,185],[1538175600000,0],[1538179200000,2],[1538182800000,344],[1538186400000,287],[1538190000000,0],[1538193600000,0],[1538197200000,0],[1538200800000,163],[1538204400000,46],[1538208000000,369],[1538211600000,352],[1538215200000,355],[1538218800000,349],[1538222400000,333],[1538226000000,0],[1538229600000,0],[1538233200000,0],[1538236800000,0],[1538240400000,0],[1538244000000,0],[1538247600000,0],[1538251200000,0],[1538254800000,0],[1538258400000,0],[1538262000000,0],[1538265600000,0],[1538269200000,0],[1538272800000,0],[1538276400000,0],[1538280000000,0],[1538283600000,0],[1538287200000,0],[1538290800000,0],[1538294400000,0]]】
+2018-09-30 17:07:30.901  INFO 7403 --- [nioEventLoopGroup-4-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:08:10.724  INFO 7403 --- [nioEventLoopGroup-4-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:09:07.432  INFO 7403 --- [nioEventLoopGroup-4-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:09:51.479  INFO 7403 --- [nioEventLoopGroup-4-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:10:40.380  INFO 7403 --- [nioEventLoopGroup-4-1] c.p.p.network.peer.PeerClientHandler     : 接收消息...
+2018-09-30 17:10:44.271  INFO 7403 --- [Thread-5] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63c12fb0: startup date [Sun Sep 30 17:04:25 CST 2018]; root of context hierarchy
+2018-09-30 17:10:44.273  INFO 7403 --- [Thread-5] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2018-09-30 17:10:44.274  INFO 7403 --- [Thread-5] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-09-30 17:10:44.275  INFO 7403 --- [Thread-5] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-09-30 17:10:44.275  INFO 7403 --- [Thread-5] c.p.p.network.excutor.PeerServerExcutor  : Shutting down ExecutorService 'peerServerExcutor'
+2018-09-30 17:10:44.276  INFO 7403 --- [Thread-5] c.p.p.n.excutor.IterationDataExcutor     : Shutting down ExecutorService 'iterationDataExcutor'
+2018-09-30 17:10:44.276  INFO 7403 --- [Thread-5] c.p.p.n.excutor.FoundryMachineExcutor    : Shutting down ExecutorService 'foundryMachineExcutor'
+2018-09-30 17:10:44.276  INFO 7403 --- [Thread-5] c.p.p.network.excutor.PeerClientExcutor  : Shutting down ExecutorService 'peerClientExcutor'
+2018-09-30 17:10:44.284  INFO 7403 --- [Thread-5] c.p.p.network.excutor.TotalTranExcutor   : Shutting down ExecutorService 'totalTranExcutor'
+2018-09-30 17:10:44.300  INFO 7403 --- [Thread-5] c.p.p.n.e.SaveAddressAndPubkeyExcutor    : Shutting down ExecutorService 'saveAddressAndPubkeyExcutor'
+2018-09-30 17:10:44.301  INFO 7403 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-09-30 17:10:44.303  INFO 7403 --- [PeerClientExcutor-1] c.p.photonchain.network.peer.PeerClient  : /118.190.157.106通道异常关闭
+2018-09-30 17:10:44.304  INFO 7403 --- [PeerClientExcutor-2] c.p.photonchain.network.peer.PeerClient  : /39.108.168.179通道异常关闭
+2018-09-30 17:10:44.305  INFO 7403 --- [PeerClientExcutor-3] c.p.photonchain.network.peer.PeerClient  : /47.92.136.217通道异常关闭
+2018-09-30 17:10:44.306  INFO 7403 --- [Thread-5] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Close initiated...
+2018-09-30 17:10:44.688  INFO 7403 --- [Thread-5] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Closed.

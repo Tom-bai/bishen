@@ -1,0 +1,28 @@
+
+
+$theme-color:#2049A5;
+$theme-tit-color:#fff;
+$theme-danger-color:#f44336; 
+$theme-login-color:#1a4aae;
+
+
+// font-color
+$font-tit-color:#333;
+$font-content-color:#555;
+
+// loading样式
+$loading-right-bg:#fff;
+
+@mixin prefix($property,$val) {
+    #{$property}: $val;
+    -ms-#{$property}: $val;
+    -moz-#{$property}: $val;
+    -webkit-#{$property}: $val;
+    -o-#{$property}: $val;
+}
+@mixin translate3d($x,$y,$z) {
+    @include prefix(transform,translate3d($x,$y,$z));
+}
+.el-message {
+    z-index:30000 !important;
+}

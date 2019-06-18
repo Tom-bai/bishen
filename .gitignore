@@ -1,0 +1,19 @@
+.DS_Store
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+!/build/icons/
+!/build/*.iss
+!/build/jre/
+/build/jre/bin/photon_chain/
+selenium-debug.log
+*.zip
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
